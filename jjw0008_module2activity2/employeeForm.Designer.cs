@@ -95,7 +95,6 @@
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(106, 20);
             this.nameBox.TabIndex = 4;
-            this.nameBox.Text = " ";
             // 
             // departmentBox
             // 
@@ -103,7 +102,6 @@
             this.departmentBox.Name = "departmentBox";
             this.departmentBox.Size = new System.Drawing.Size(75, 20);
             this.departmentBox.TabIndex = 6;
-            this.departmentBox.Text = " ";
             // 
             // positionBox
             // 
@@ -111,7 +109,6 @@
             this.positionBox.Name = "positionBox";
             this.positionBox.Size = new System.Drawing.Size(75, 20);
             this.positionBox.TabIndex = 7;
-            this.positionBox.Text = " ";
             // 
             // employeeListView
             // 
@@ -173,6 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(337, 353);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.addButton);
@@ -185,6 +183,7 @@
             this.Controls.Add(this.departmentLabel);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.nameLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "employeeForm";
             this.Text = "Employees";
             this.ResumeLayout(false);
