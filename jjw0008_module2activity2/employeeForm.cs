@@ -31,19 +31,26 @@ namespace jjw0008_module2activity2
                     employee.Department, employee.Position });
         }
 
+        private void clearFields()
+        {
+            nameBox.Text = "";
+            idBox.Text = "";
+            departmentBox.Text = "";
+            positionBox.Text = "";
+        }
+
         private void addEmployee(object sender, EventArgs e)
         {
             employeeList.Add(new Employee(
                 name: nameBox.Text, idNumber: Int32.Parse(idBox.Text),
                 department: departmentBox.Text, position: positionBox.Text));
             employeeToListItem(employeeList.LastOrDefault());
-            //employeeListView.Items.Add(nameBox.Text).
-            //    SubItems.AddRange(new string[] { idBox.Text,
-            //        departmentBox.Text, positionBox.Text });
+            clearFields();
         }
 
         private void refreshEmployees(object sender, EventArgs e)
         {
+            employeeListView.Items.Clear();
             foreach (Employee employee in employeeList)
             {
                 employeeToListItem(employee);
