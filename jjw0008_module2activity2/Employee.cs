@@ -15,5 +15,29 @@ namespace jjw0008_module2activity2
         public int IdNumber { get; set; }       /// holds the employee’s ID number.
         public String Department { get; set; }  /// holds the name of the department in which the employee works.
         public String Position { get; set; }    /// holds the employee’s job title.
+
+        public Employee(String name, int idNumber, String department, String position)
+        {
+            Name = name;
+            IdNumber = idNumber;
+            Department = department;
+            Position = position;
+        }
+
+        public Employee(String name, int idNumber)
+        {
+            Name = name;
+            IdNumber = idNumber;
+            Department = "";
+            Position = "";
+        }
+
+        public Employee()
+        {
+            Name = "";
+            IdNumber = 0;
+            Department = "";
+            Position = "";
+        }
     }
 }
