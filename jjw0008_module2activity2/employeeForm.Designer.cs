@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             this.nameLabel = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
             this.departmentLabel = new System.Windows.Forms.Label();
@@ -122,11 +121,10 @@
             this.departmentColumn,
             this.positionColumn});
             this.employeeListView.HideSelection = false;
-            this.employeeListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
             this.employeeListView.Location = new System.Drawing.Point(12, 85);
             this.employeeListView.Name = "employeeListView";
             this.employeeListView.Size = new System.Drawing.Size(311, 256);
+            this.employeeListView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.employeeListView.TabIndex = 8;
             this.employeeListView.UseCompatibleStateImageBehavior = false;
             this.employeeListView.View = System.Windows.Forms.View.Details;
@@ -159,6 +157,7 @@
             this.addButton.TabIndex = 9;
             this.addButton.Text = "Add Employee";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addEmployee);
             // 
             // button1
             // 
