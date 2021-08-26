@@ -14,6 +14,7 @@ namespace jjw0008_module2activity2
         [STAThread]
         static void Main()
         {
+            List<Employee> employeeList = new List<Employee>();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
