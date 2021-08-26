@@ -17,7 +17,7 @@ namespace jjw0008_module2activity2
             List<Employee> employeeList = new List<Employee>();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new employeeForm());
         }
     }
 }
