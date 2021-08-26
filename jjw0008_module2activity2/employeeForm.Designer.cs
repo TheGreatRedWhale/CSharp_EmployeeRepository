@@ -42,7 +42,7 @@
             this.departmentColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.positionColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.addButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.refreshButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -87,14 +87,14 @@
             this.idBox.Mask = "00000";
             this.idBox.Name = "idBox";
             this.idBox.Size = new System.Drawing.Size(37, 20);
-            this.idBox.TabIndex = 4;
+            this.idBox.TabIndex = 5;
             // 
             // nameBox
             // 
             this.nameBox.Location = new System.Drawing.Point(12, 30);
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(106, 20);
-            this.nameBox.TabIndex = 5;
+            this.nameBox.TabIndex = 4;
             this.nameBox.Text = " ";
             // 
             // departmentBox
@@ -125,7 +125,7 @@
             this.employeeListView.Name = "employeeListView";
             this.employeeListView.Size = new System.Drawing.Size(311, 256);
             this.employeeListView.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.employeeListView.TabIndex = 8;
+            this.employeeListView.TabIndex = 10;
             this.employeeListView.UseCompatibleStateImageBehavior = false;
             this.employeeListView.View = System.Windows.Forms.View.Details;
             // 
@@ -154,27 +154,27 @@
             this.addButton.Location = new System.Drawing.Point(12, 56);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(149, 23);
-            this.addButton.TabIndex = 9;
+            this.addButton.TabIndex = 8;
             this.addButton.Text = "Add Employee";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addEmployee);
             // 
-            // button1
+            // refreshButton
             // 
-            this.button1.Location = new System.Drawing.Point(167, 56);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.refreshEmployees);
+            this.refreshButton.Location = new System.Drawing.Point(167, 56);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(156, 23);
+            this.refreshButton.TabIndex = 9;
+            this.refreshButton.Text = "Refresh";
+            this.refreshButton.UseVisualStyleBackColor = true;
+            this.refreshButton.Click += new System.EventHandler(this.refreshEmployees);
             // 
             // employeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(337, 353);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.employeeListView);
             this.Controls.Add(this.positionBox);
@@ -198,8 +198,8 @@
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.Label departmentLabel;
         private System.Windows.Forms.Label positionLabel;
-        private System.Windows.Forms.MaskedTextBox idBox;
         private System.Windows.Forms.TextBox nameBox;
+        private System.Windows.Forms.MaskedTextBox idBox;
         private System.Windows.Forms.TextBox departmentBox;
         private System.Windows.Forms.TextBox positionBox;
         private System.Windows.Forms.ListView employeeListView;
@@ -208,7 +208,7 @@
         private System.Windows.Forms.ColumnHeader departmentColumn;
         private System.Windows.Forms.ColumnHeader positionColumn;
         private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button refreshButton;
     }
 }
 
