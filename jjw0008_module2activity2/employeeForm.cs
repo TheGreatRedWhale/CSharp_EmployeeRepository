@@ -19,18 +19,7 @@ namespace jjw0008_module2activity2
             InitializeComponent();
         }
 
-        private void addEmployee(object sender, EventArgs e)
-        {
-            employeeList.Add(new Employee(
-                name: nameBox.Text, idNumber: Int32.Parse(idBox.Text),
-                department: departmentBox.Text, position: positionBox.Text));
-            employeeToListItem(employeeList[employeeList.Count - 1]);
-            //employeeListView.Items.Add(nameBox.Text).
-            //    SubItems.AddRange(new string[] { idBox.Text,
-            //        departmentBox.Text, positionBox.Text });
-        }
-
-        private void employeeToListItem (Employee employee)
+        private void employeeToListItem(Employee employee)
         {
             String idString = employee.IdNumber.ToString();
             while (idString.Length < 5)
@@ -40,6 +29,25 @@ namespace jjw0008_module2activity2
             employeeListView.Items.Add(employee.Name).
                 SubItems.AddRange(new string[] {idString,
                     employee.Department, employee.Position });
+        }
+
+        private void addEmployee(object sender, EventArgs e)
+        {
+            employeeList.Add(new Employee(
+                name: nameBox.Text, idNumber: Int32.Parse(idBox.Text),
+                department: departmentBox.Text, position: positionBox.Text));
+            employeeToListItem(employeeList.LastOrDefault());
+            //employeeListView.Items.Add(nameBox.Text).
+            //    SubItems.AddRange(new string[] { idBox.Text,
+            //        departmentBox.Text, positionBox.Text });
+        }
+
+        private void refreshEmployees(object sender, EventArgs e)
+        {
+            foreach (Employee employee in employeeList)
+            {
+                employeeToListItem(employee);
+            }
         }
     }
 }
