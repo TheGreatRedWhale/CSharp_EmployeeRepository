@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1622
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jjw0008_module2activity2", "jjw0008_module2activity2\jjw0008_module2activity2.csproj", "{20B46472-16FA-4DE7-B82A-2F707F29D0A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeRepository", "jjw0008_module2activity2\EmployeeRepository.csproj", "{20B46472-16FA-4DE7-B82A-2F707F29D0A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

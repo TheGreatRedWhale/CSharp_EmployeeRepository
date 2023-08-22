@@ -16,7 +16,7 @@ namespace jjw0008_module2activity2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new employeeForm());
+            Application.Run(new EmployeeForm());
         }
     }
 }
